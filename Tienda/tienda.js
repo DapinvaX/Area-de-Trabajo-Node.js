@@ -190,9 +190,15 @@ function crear(respuesta) {
 
                       'precio float'+
 
-                   ')', function (error,resultado){
+                   ')', function(){
+                    alert("La tabla ha sido creada con éxito.")
+                   }, 
+                   
+                   function (error,resultado){
 
        if (error) {
+         
+        alert("Error! Error al crear la tabla.");
 
          console.log(error);             
 
